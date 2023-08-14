@@ -1,19 +1,26 @@
 // javascript
 let countEl= document.getElementById("count-el")
 // get element by the id of html tag using variable
-console.log(countEl)
+ let Pes= document.getElementById("pE")
+   
 
 let count = 0
 
 function increm(){
-    count=count+1 
+    count+=1 
     countEl.innerText=count
 }
  
 function decre()
 {   
-     count=count-1 
+count-=1
+countEl.innerText=count 
     
-    countEl.innerText=count
-    
+}
+function save()
+{
+  let counter= count+" - "  
+    Pes.textContent += counter
+     countEl.innerText=0
+     count=0
 }
